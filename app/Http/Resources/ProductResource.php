@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class ProductResource extends JsonResource
+{
+    public function toArray(Request $request): array
+    {
+        return [
+            'id' => $this->id,
+            'sku' => $this->sku,
+            'name' => $this->name,
+            'description' => $this->description,
+            'price' => (float) $this->price,
+            'total_stock' => $this->when($this->relationLoaded('stocks'), $this->stocks->sum('quantity')),
+            'stocks' => StockResource::collection($this->whenLoaded('stocks')),
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+        ];
+    }
+}

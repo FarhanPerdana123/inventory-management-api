@@ -1,0 +1,118 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible.
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like
+      placeholder: Describe the feature...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this feature working?
+      placeholder: Describe your ideal solution...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be useful
+      placeholder: |
+        1. As a [user type], I want [goal] so that [benefit]
+        2. ...
+        
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions have you considered?
+      placeholder: Describe alternative approaches...
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Critical (Blocking other work)
+        - High (Important for upcoming release)
+        - Medium (Nice to have soon)
+        - Low (Future consideration)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated Effort
+      description: Rough estimate of implementation effort
+      options:
+        - Small (< 1 day)
+        - Medium (1-3 days)
+        - Large (1 week)
+        - Extra Large (> 1 week)
+        - Unknown
+        
+  - type: checkboxes
+    id: components
+    attributes:
+      label: Affected Components
+      description: Which parts of the system will be affected?
+      options:
+        - label: API Endpoints
+        - label: Database Schema
+        - label: Authentication/Authorization
+        - label: Documentation
+        - label: Tests
+        - label: CI/CD Pipeline
+        
+  - type: checkboxes
+    id: breaking
+    attributes:
+      label: Breaking Changes
+      description: Will this introduce breaking changes?
+      options:
+        - label: Yes, this will introduce breaking changes
+        - label: No breaking changes
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or examples
+      placeholder: Add screenshots, links, or references...
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for similar feature requests
+          required: true
+        - label: I have described the problem clearly
+          required: true
+        - label: I have provided use cases
+          required: true
