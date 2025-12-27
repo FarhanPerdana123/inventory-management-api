@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/YOUR_USERNAME/inventory-api/actions"><img src="https://github.com/YOUR_USERNAME/inventory-api/workflows/CI/CD%20Pipeline/badge.svg" alt="Build Status"></a>
-<a href="https://github.com/YOUR_USERNAME/inventory-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/YOUR_USERNAME/inventory-api" alt="License"></a>
-<a href="https://github.com/YOUR_USERNAME/inventory-api/releases"><img src="https://img.shields.io/github/v/release/YOUR_USERNAME/inventory-api" alt="Latest Release"></a>
+<a href="https://github.com/FarhanPerdana123/inventory-management-api/actions"><img src="https://github.com/FarhanPerdana123/inventory-management-api/workflows/CI/CD%20Pipeline/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/FarhanPerdana123/inventory-management-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/FarhanPerdana123/inventory-management-api" alt="License"></a>
+<a href="https://github.com/FarhanPerdana123/inventory-management-api/releases"><img src="https://img.shields.io/github/v/release/FarhanPerdana123/inventory-management-api" alt="Latest Release"></a>
 </p>
 
 ---
@@ -92,7 +92,7 @@ A **production-ready RESTful API** for comprehensive inventory management built 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/inventory-api.git
+   git clone https://github.com/FarhanPerdana123/inventory-management-api.git
    cd inventory-api
    ```
 
@@ -134,7 +134,7 @@ The API will be available at `http://localhost:8000`
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/inventory-api.git
+   git clone https://github.com/FarhanPerdana123/inventory-management-api.git
    cd inventory-api
    ```
 
@@ -452,9 +452,9 @@ MIT License - You are free to:
 
 | Channel | Link |
 |---------|------|
-| 🐛 Issues | [GitHub Issues](https://github.com/YOUR_USERNAME/inventory-api/issues) |
-| 💬 Discussions | [GitHub Discussions](https://github.com/YOUR_USERNAME/inventory-api/discussions) |
-| 📧 Email | support@example.com |
+| 🐛 Issues | [GitHub Issues](https://github.com/FarhanPerdana123/inventory-management-api/issues) |
+| 💬 Discussions | [GitHub Discussions](https://github.com/FarhanPerdana123/inventory-management-api/discussions) |
+| 📧 Email | muhammadfarhanperdana@mail.ugm.ac.id |
 | 🔒 Security | [Security Policy](SECURITY.md) |
 
 ---
@@ -658,10 +658,10 @@ If you discover a security vulnerability, please send an email to security@examp
 
 ## 📞 Support
 
-- 📫 **Email:** support@example.com
-- 🐛 **Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/inventory-api/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/YOUR_USERNAME/inventory-api/discussions)
-- 📖 **Documentation:** [Wiki](https://github.com/YOUR_USERNAME/inventory-api/wiki)
+- 📫 **Email:** muhammadfarhanperdana@mail.ugm.ac.id
+- 🐛 **Issues:** [GitHub Issues](https://github.com/FarhanPerdana123/inventory-management-api/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/FarhanPerdana123/inventory-management-api/discussions)
+- 📖 **Documentation:** [Wiki](https://github.com/FarhanPerdana123/inventory-management-api/wiki)
 
 ## 🗺️ Roadmap
 

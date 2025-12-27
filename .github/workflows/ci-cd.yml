@@ -196,6 +196,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Validate deployment secrets
+        run: |
+          if [ -z "${{ secrets.STAGING_SERVER }}" ]; then
+            echo "Error: STAGING_SERVER secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.STAGING_USER }}" ]; then
+            echo "Error: STAGING_USER secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
+            echo "Error: SSH_PRIVATE_KEY secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.STAGING_PATH }}" ]; then
+            echo "Error: STAGING_PATH secret is not set"
+            exit 1
+          fi
+          echo "All required secrets are configured"
+
       - name: Deploy to staging server
         uses: appleboy/ssh-action@v1.0.0
         with:
@@ -228,6 +248,26 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Validate deployment secrets
+        run: |
+          if [ -z "${{ secrets.PRODUCTION_SERVER }}" ]; then
+            echo "Error: PRODUCTION_SERVER secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.PRODUCTION_USER }}" ]; then
+            echo "Error: PRODUCTION_USER secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
+            echo "Error: SSH_PRIVATE_KEY secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.PRODUCTION_PATH }}" ]; then
+            echo "Error: PRODUCTION_PATH secret is not set"
+            exit 1
+          fi
+          echo "All required secrets are configured"
 
       - name: Deploy to production server
         uses: appleboy/ssh-action@v1.0.0

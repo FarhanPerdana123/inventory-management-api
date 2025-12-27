@@ -144,8 +144,8 @@ For security concerns, please contact:
 - 🔒 PGP Key: [Not yet available]
 
 For general questions, please use:
-- 💬 GitHub Discussions: https://github.com/YOUR_USERNAME/inventory-api/discussions
-- 🐛 GitHub Issues: https://github.com/YOUR_USERNAME/inventory-api/issues
+- 💬 GitHub Discussions: https://github.com/FarhanPerdana123/inventory-management-api/discussions
+- 🐛 GitHub Issues: https://github.com/FarhanPerdana123/inventory-management-api/issues
 
 ---
 
