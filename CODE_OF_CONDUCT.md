@@ -124,7 +124,7 @@ For answers to common questions about this code of conduct, see the FAQ at
 For questions or concerns about this Code of Conduct:
 
 * 📧 Email: conduct@example.com
-* 💬 GitHub Discussions: https://github.com/YOUR_USERNAME/inventory-api/discussions
+* 💬 GitHub Discussions: https://github.com/FarhanPerdana123/inventory-management-api/discussions
 
 ---
 

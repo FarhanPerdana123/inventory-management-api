@@ -46,13 +46,13 @@ We are committed to providing a welcoming and inspiring community for all. Pleas
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/inventory-api.git
+   git clone https://github.com/FarhanPerdana123/inventory-management-api.git
    cd inventory-api
    ```
 
 3. **Add upstream remote**
    ```bash
-   git remote add upstream https://github.com/ORIGINAL_OWNER/inventory-api.git
+   git remote add upstream https://github.com/FarhanPerdana123/inventory-management-api.git
    ```
 
 4. **Install dependencies**
