@@ -58,6 +58,7 @@ A **production-ready RESTful API** for comprehensive inventory management built 
 - **Containerization:** Docker & Docker Compose
 - **Web Server:** Nginx
 - **CI/CD:** GitHub Actions
+- **Monitoring:** Grafana, Prometheus, cAdvisor
 - **Testing:** PHPUnit
 - **Code Quality:** PHPStan, Laravel Pint, PHP CodeSniffer
 ### Backend
@@ -468,6 +469,7 @@ MIT License - You are free to:
 | [CI/CD Guide](docs/CI-CD.md) | Pipeline documentation |
 | [Database ERD](docs/erd.md) | Database schema |
 | [Docker Guide](DOCKER-README.md) | Containerization guide |
+| [Monitoring Guide](docs/MONITORING.md) | Grafana, Prometheus & cAdvisor setup |
 | [Contributing](CONTRIBUTING.md) | How to contribute |
 | [Changelog](CHANGELOG.md) | Version history |
 | [Security](SECURITY.md) | Security policy |

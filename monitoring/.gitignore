@@ -1,0 +1,5 @@
+# Ignore Grafana data
+grafana_data/
+
+# Ignore Prometheus data
+prometheus_data/
