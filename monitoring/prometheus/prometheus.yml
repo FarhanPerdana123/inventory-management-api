@@ -1,0 +1,54 @@
+# Prometheus Configuration
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'inventory-api-monitor'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+# Load rules once and periodically evaluate them
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          group: 'monitoring'
+
+  # cAdvisor - Container metrics
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+        labels:
+          group: 'docker'
+
+  # Node Exporter - Host metrics
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+        labels:
+          group: 'host'
+
+  # MySQL metrics (optional - requires mysqld_exporter)
+  # - job_name: 'mysql'
+  #   static_configs:
+  #     - targets: ['mysql-exporter:9104']
+  #       labels:
+  #         group: 'database'
+
+  # Nginx metrics (optional - requires nginx-prometheus-exporter)
+  # - job_name: 'nginx'
+  #   static_configs:
+  #     - targets: ['nginx-exporter:9113']
+  #       labels:
+  #         group: 'web'
